@@ -117,6 +117,24 @@ main{
     gap: 20px;
   
 }
+/* featured styles */
+.featured-container{
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    margin: 100px 50px;
+}
+.featured-title{
+    color: #0A0826;
+    font-size: 2.25rem;
+}
+.btn-join-now{
+    background: #E02C6D;
+    padding: 10px 24px;
+    color: #FFF;
+    font-weight: 700;
+    border: 0;
+}
 
 
 
@@ -134,8 +152,7 @@ main{
 /* mobile device */
 @media screen  and (max-width:576px) {
 
-    header nav
-    {
+    header nav{
         flex-direction: column;
         margin: 10px;
     }
@@ -157,6 +174,10 @@ main{
         grid-template-columns: 1fr;
         
     }
+    .featured-container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
    
 
 }
@@ -173,5 +194,9 @@ main{
     }
     main{
         margin: 0 auto;
+    }
+    .featured-container{
+        flex-direction: column-reverse;
+        text-align: center;
     }
 }
