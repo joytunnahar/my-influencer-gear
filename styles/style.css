@@ -73,6 +73,14 @@ main{
     margin: 70px 200px;
 }
 /* sponsor styles */
+.sponsors-container{
+    background: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+/* card styles */
 .card-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -85,8 +93,7 @@ main{
     border-radius: 5px;
     background: #FFF;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
-    margin: 10px;
-   
+     
 }
 
 
@@ -190,6 +197,9 @@ main{
     main {
         margin: 0 auto;
     }
+    .sponsors-container{
+        flex-direction: column;
+    }
     .card-container{
         grid-template-columns: 1fr;
         
@@ -213,6 +223,9 @@ main{
     .banner{
         background-position: top;
         flex-direction: column-reverse;
+    }
+    .sponsors-container{
+        flex-wrap: wrap;
     }
     .card-container{
         grid-template-columns: repeat(2, 1fr);
