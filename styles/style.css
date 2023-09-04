@@ -77,27 +77,30 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin: 100px auto;
+    margin: 100px 0;
 }
 .card{
     height: 450px;
-   
-    text-align: center;
     padding: 15px;
     border-radius: 5px;
     background: #FFF;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    margin: 10px;
+   
 }
+
 
 .card img{
     max-height: 250px;
    width: 100%;
+   height: 100%;
    
 }
 .card-title{
     color: #18191F;
     font-size: 1.75rem;
     font-weight: 500;
+    margin-bottom: -20px;
     
 }
 .price{
@@ -111,7 +114,8 @@ main{
 .card .ratings{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 20px;
+  
 }
 
 
@@ -146,6 +150,15 @@ main{
     .btn-preebook{
        padding: 20px 40px;
     }
+    main{
+        margin: 0 auto;
+    }
+    .card-container{
+        grid-template-columns: 1fr;
+        
+    }
+   
+
 }
 
 /* medium device styles */
@@ -153,5 +166,12 @@ main{
     .banner{
         background-position: top;
         flex-direction: column-reverse;
+    }
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    main{
+        margin: 0 auto;
     }
 }
