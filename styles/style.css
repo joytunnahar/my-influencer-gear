@@ -135,6 +135,26 @@ main{
     font-weight: 700;
     border: 0;
 }
+/* footer styles */
+.footer{
+    background-color: #cda1f1;
+    
+}
+.footer-content{
+   margin: 0 auto;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   width: 500px;
+   text-align: center;
+  
+   
+}
+.footer-icon{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+}
 
 
 
@@ -167,7 +187,7 @@ main{
     .btn-preebook{
        padding: 20px 40px;
     }
-    main{
+    main {
         margin: 0 auto;
     }
     .card-container{
@@ -178,6 +198,12 @@ main{
         flex-direction: column-reverse;
         text-align: center;
     }
+     .footer{
+        width: 100%;
+    } 
+    .footer-content{
+        width: 350px;
+    } 
    
 
 }
